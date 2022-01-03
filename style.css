@@ -1,0 +1,69 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: #ffffff;
+}
+
+#btn {
+  border: 1px solid #6bcdfb;
+  border-radius: 3vh;
+  background: #6bcdfb;
+  width: 32vmax;
+  z-index: 1vh;
+  letter-spacing: 0.7em;
+  text-align: center;
+  box-shadow: 0px 1px 5px 2px #bfceef;
+  cursor: pointer;
+}
+
+#btn-particles {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  color: #eee;
+  font-family: monospace;
+  z-index: 5;
+  /* filter: url(#gooeyness); */
+}
+
+#btn:active {
+  transform: scale(0.4) translate(-15%, -15%);
+}
+
+.results {
+  width: 712vmax;
+}
+
+.cases {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1vh;
+  margin-left: 2vh;
+  border: 1px solid #ffff;
+}
+
+.cases > p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 6vh;
+}
+
+.memecasesImg {
+  width: 30vh;
+  height: 30vh;
+}
+
+.urlimg {
+  width: 132vh;
+  height: 76vh;
+}
+
+span {
+  font-weight: 777;
+  font-size: 8vh;
+}
