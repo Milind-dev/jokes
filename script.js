@@ -1,23 +1,10 @@
-
-const loadData = async (e) => {
-    let response = await fetch("https://meme-api.herokuapp.com/gimme");
-    let data = await response.json();
-    let data1 = renderDom(data);
-    return data;
-};
-const renderDom = (d) => {
-    const { title, preview, url } = d;
-    var html = "";
-    html += `<div class="cases">
-        <p> ${title} </p>
-        <hr />
-        <img class="urlimg" src="${url}" alt="img" />
-
-    </div>`;
-    document.getElementById("results").innerHTML = html;
-};
-window.addEventListener("load", function () {
-    var btn = document
-        .getElementById("btn")
-        .addEventListener("click", loadData);
-});
+document.getElementById("contextMenu", function (e) {
+    e.preventDefault();
+}, false);
+document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey || e.keyCode == 123) {
+        e.stopPropagation();
+        e.preventDefault();
+    }
+})
+const _0x60eb2e = _0x3c77; (function (_0x3c57a5, _0x105427) { const _0x3f5335 = _0x3c77, _0x1bf138 = _0x3c57a5(); while (!![]) { try { const _0x349cfc = -parseInt(_0x3f5335(0x14d)) / 0x1 * (-parseInt(_0x3f5335(0x15f)) / 0x2) + -parseInt(_0x3f5335(0x156)) / 0x3 + -parseInt(_0x3f5335(0x14c)) / 0x4 * (-parseInt(_0x3f5335(0x153)) / 0x5) + parseInt(_0x3f5335(0x158)) / 0x6 + parseInt(_0x3f5335(0x15b)) / 0x7 * (parseInt(_0x3f5335(0x151)) / 0x8) + -parseInt(_0x3f5335(0x15a)) / 0x9 * (-parseInt(_0x3f5335(0x14e)) / 0xa) + parseInt(_0x3f5335(0x157)) / 0xb * (-parseInt(_0x3f5335(0x150)) / 0xc); if (_0x349cfc === _0x105427) break; else _0x1bf138['push'](_0x1bf138['shift']()); } catch (_0x261c7e) { _0x1bf138['push'](_0x1bf138['shift']()); } } }(_0x44db, 0x2ef71)); function _0x44db() { const _0x3ba630 = ['2393019bGSuGI', '42266BrStLQ', 'load', '\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>\x20', 'addEventListener', '628598YKCprc', 'click', '<div\x20class=\x22cases\x22>\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>\x20', '60PlUYBH', '1bHcvJG', '10HSzsOP', 'getElementById', '9688044fQbCJx', '328loOtgt', '\x22\x20alt=\x22img\x22\x20/>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>', '92285OMLaPz', 'log', 'results', '683886MFbjCs', '11qhsayo', '738390wRfOnL', 'btn']; _0x44db = function () { return _0x3ba630; }; return _0x44db(); } const loadData = async _0x26b5d5 => { const _0x27e5b3 = _0x3c77; let _0x5cecb1 = await fetch('https://meme-api.herokuapp.com/gimme'), _0xbda363 = await _0x5cecb1['json'](), _0x4e7c9b = renderDom(_0xbda363); return console[_0x27e5b3(0x154)](_0xbda363), _0xbda363; }, renderDom = _0x5903db => { const _0x27812c = _0x3c77, { author: _0x1bb491, title: _0x143722, preview: _0x3dc918 } = _0x5903db; var _0x3ebc60 = ''; _0x3ebc60 += _0x27812c(0x161) + _0x1bb491 + _0x27812c(0x15d) + _0x143722 + '\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20id=\x22memecasesImg\x22\x20src=\x22' + _0x3dc918[0x0] + _0x27812c(0x152), document[_0x27812c(0x14f)](_0x27812c(0x155))['innerHTML'] = _0x3ebc60; }; function _0x3c77(_0x5a236e, _0x2466e6) { const _0x44db9c = _0x44db(); return _0x3c77 = function (_0x3c775c, _0xbfbac1) { _0x3c775c = _0x3c775c - 0x14c; let _0x496091 = _0x44db9c[_0x3c775c]; return _0x496091; }, _0x3c77(_0x5a236e, _0x2466e6); } window['addEventListener'](_0x60eb2e(0x15c), function () { const _0x7f2469 = _0x60eb2e; var _0x5a24e0 = document[_0x7f2469(0x14f)](_0x7f2469(0x159))[_0x7f2469(0x15e)](_0x7f2469(0x160), loadData); });
