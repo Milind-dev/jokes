@@ -3,7 +3,6 @@ const loadData = async (e) => {
     let response = await fetch("https://meme-api.herokuapp.com/gimme");
     let data = await response.json();
     let data1 = renderDom(data);
-    console.log(data);
     return data;
 };
 const renderDom = (d) => {
